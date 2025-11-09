@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+dist/
+
+# Environment - 敏感信息，不要提交
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# macOS
+.DS_Store
+._*
+
+# Database - 包含敏感数据
+*.db
+*.sqlite
+*.sqlite3
+data/
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Backups
+backups/
+*.backup
+
+# Process manager
+.pm2/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+Thumbs.db
+desktop.ini
+

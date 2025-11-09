@@ -1,0 +1,40 @@
+{
+  "name": "group-msg-sync-tools",
+  "version": "1.0.0",
+  "description": "Telegram bot for syncing messages between groups",
+  "main": "dist/bot.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bot.js",
+    "dev": "ts-node src/bot.ts",
+    "watch": "tsc --watch",
+    "deploy": "bash deploy.sh",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop telegram-bot",
+    "pm2:restart": "pm2 restart telegram-bot",
+    "pm2:logs": "pm2 logs telegram-bot"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "message-sync"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "telegraf": "^4.15.6",
+    "dotenv": "^16.4.5",
+    "better-sqlite3": "^11.3.0",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/better-sqlite3": "^7.6.11",
+    "ts-node": "^10.9.2"
+  }
+}
+
